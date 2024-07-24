@@ -167,7 +167,7 @@ img{
 }
 .navbar .menu .nav-item .nav-link
 {
-    color: var(--white);
+    color: var(--black-900);
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -245,4 +245,33 @@ img{
 {
     color: var(--main-color);
     background-color: var(--white);
+}
+
+
+
+
+
+
+/* page 1 */
+
+
+
+/* sale  */
+
+.sale{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.sale__content li{
+   list-style: none;
+}
+.sale__content a{
+    color: var(--text-dark);
+    margin-left: 50px;
+}
+
+.vertical{
+   border-left: 1px solid black;
+   margin-left: 60px;
 }
