@@ -1,0 +1,53 @@
+.aboutus{
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --primary-color: #8263a3;
+    --text-dark:#00a78e;;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+
+  
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #dbdce0;
+}
+
+body::after {
+  position: fixed;
+  content: "";
+  height: 100%;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: var(--text-dark);
+  z-index: -1;
+
+  animation: body-bg 1s ease-in-out forwards;
+}
+
+@keyframes body-bg {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 50vw;
+  }
+}
+
+body::before {
+  position: fixed;
+  content: "0";
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  font-size: 70rem;
+  font-weight: 200;
+  color: var(--white);
+  z-index: -1;
+  opacity: 0.5;
+}
